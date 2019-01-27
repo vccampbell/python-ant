@@ -185,7 +185,7 @@ class USB1Driver(Driver):
 class USB2Driver(Driver):
     def _open(self):
         # Most of this is straight from the PyUSB example documentation		
-        dev = usb.core.find(idVendor=0x0fcf, idProduct=0x1008)
+        dev = usb.core.find(idVendor=0x0fcf, idProduct=0x1009)
 
         if dev is None:
             raise DriverError('Could not open device (not found)')
